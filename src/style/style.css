@@ -1,0 +1,346 @@
+@font-face {
+    font-family: 'marvin';
+    src: url("../fonts/marvin.eot");
+    src: url("../fonts/marvin.eot?#iefix") format("embedded-opentype"), 
+    url("../fonts/marvin.woff2") format("woff2"), 
+    url("../fonts/marvin.woff") format("woff"), 
+    url("../fonts/marvin.ttf") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+  }
+
+
+body {
+    margin: 0;
+}
+
+.container {
+    margin: 0 auto;
+    width: 3508px;
+    height: 2480px;
+    background-color: #a1a1a1;
+}
+.font {
+    font-family: 'marvin';
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #ffffff;
+}
+.top-bar-wrp {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 60px;
+    box-sizing: border-box;
+}
+.bonus-money {
+    width: 365px;
+    height: 148px;
+    border-radius: 74px;
+    box-shadow: 0px 5px 1px 0px rgba(21, 46, 79, 0.35), inset 0px 23px 24px 0 rgba(246, 255, 236, 0.73);
+    background-image: linear-gradient(to bottom, #fc539e, #a3004a, #94084d, #c6095f);
+    font-size: 84.5px;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    margin-top: 68px;
+    margin-right: 130px;
+    box-sizing: border-box;
+}
+
+.bonus-money span {
+    display: block;
+    width: 53px;
+}
+
+.progress-bar {
+    width: 1338px;
+    height: 252px;
+    border-radius: 0 0 50px 50px;
+    background-image: linear-gradient(to top, #092140, #103d79);
+    box-sizing: border-box;display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 85px;
+}
+
+.progress-bar span {
+    width: 346px;
+    height: 56px;
+    font-size: 68px;
+}
+progress {
+    width: 1257px;
+    height: 97px;
+    border-radius: 48.5px;
+    box-shadow: 0px 5px 1px 0px rgba(49, 134, 249, 0.35);
+    background-image: linear-gradient(to top, #000f24, #032655); 
+}
+  progress::-webkit-progress-bar {
+    /* стилевые правила */border-radius: 48px;
+    box-shadow: 0px 5px 1px 0px rgba(49, 134, 249, 0.35);
+    background-image: linear-gradient(to top, #000f24, #032655); 
+  }
+  progress::-webkit-progress-value {
+    border-radius: 43px;
+    background-image: linear-gradient(to top, #ecffcc, #a2ff00, #1d9b00, #60ff00);
+    }
+  progress::-moz-progress-bar {
+    border-radius: 43px;
+    background-image: linear-gradient(to top, #ecffcc, #a2ff00, #1d9b00, #60ff00);
+  }
+  .bonus-money2 {
+    width: 494px;
+    height: 148px;
+    border-radius: 74px;
+    box-shadow: 0px 5px 1px 0px rgba(21, 46, 79, 0.35), inset 0px 23px 24px 0 rgba(246, 255, 236, 0.73);
+    background-image: linear-gradient(to bottom, #dc57f8, #9310b5, #580673, #7517f4);
+    font-size: 84.5px;
+    display: flex;
+    justify-content: center;
+    padding-top: 15px;
+    margin-top: 68px;
+    box-sizing: border-box;
+}
+
+.bonus-money2 span {
+    display: block;
+    width: 214px;
+  
+}
+.money-button {
+    display: block;
+    width: 120px;
+    height: 120px;
+    box-shadow: 0px 5px 1px 0px rgba(21, 46, 79, 0.35), inset 0px 23px 24px 0 rgba(246, 255, 236, 0.73);
+    background-image: linear-gradient(to top, #ffe886, #fac22c, #b8711b, #804e11), linear-gradient(to top, #fffefa, #f1f5ff);
+    border-radius: 50%;
+    outline: none;
+    margin: 83px 200px 0 45px;
+    position: relative;
+}
+.money-button span {
+   font-size: 150px;
+   position: absolute;
+   top: -45px;
+   left: 25px;
+}
+
+.play-btn-bg {
+    width: 270px;
+    height: 270px;
+    border-radius: 50px;
+    box-shadow: 0px 4px 38.8px 1.2px rgba(0, 0, 0, 0.49), inset -0.1px -3px 15.1px 5.9px rgba(10, 181, 222, 0.69);
+    background-color: #ffffff;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn {
+    width: 190px;
+  height: 190px;
+  border-radius: 50px;
+  box-shadow: 0px 18px 52.4px 1.6px rgba(0, 0, 0, 0.64);
+  border: solid 27px #61d1ed;
+  background-color: #20549a;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-pause {
+    color: #20549a;
+    background-color: #a29e9e;
+  
+    width: 86px; height: 86px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    
+    background-image: linear-gradient(to right,
+                                      transparent 40%,
+                                      currentColor 40%,
+                                      currentColor 60%,
+                                      transparent 0);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  
+    transition: background-size .3s;
+  }
+  
+  .play-pause.paused {
+    background-size: 0 100%;
+  }
+  
+  .play-pause::before,
+  .play-pause::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: currentColor;
+    box-shadow: 0px 5px 8.7px 0.3px rgba(15, 48, 93, 0.35);
+   
+    transform: skew(90deg);
+    transform-origin: top left;
+  
+    transition: transform .3s;
+  }
+  
+  .play-pause::after {
+    transform-origin: bottom left;
+  }
+  
+  .play-pause.paused::before {
+    transform: skew(64deg);
+  }
+  
+  .play-pause.paused::after {
+    transform: skew(117deg);
+  }
+
+  .main-content {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 185px;
+    box-sizing: border-box;
+  }
+
+  .game-field {
+    width: 1633px;
+    height: 1819px;
+    background-image: url(../assets/imgs/gameField-background.png);
+    background-repeat: no-repeat;
+    background-color:  #0d233d;
+    background-position: center;
+    background-origin: border-box;
+    background-size: contain;
+    border-radius: 90px;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 7px solid white;
+  }
+  .game-panel {
+    width: 1150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .game-panel-time {
+    display: block;
+    width: 588px;
+    height: 115px;
+    border-radius: 50px 50px 0 0;
+    box-shadow: inset 0px 23px 24px 0 rgba(246, 255, 236, 0.66), inset -0.7px -21px 14.9px 3.1px rgba(5, 44, 97, 0.52);
+    border-style: solid;
+    border-width: 9px;
+    border-image-source: linear-gradient(to top, #002251, #a8cdff);
+    border-image-slice: 1;
+    background-image: linear-gradient(to top, #2b83fa, #20549a, #002656), linear-gradient(to top, #002251, #a8cdff);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    font-size: 78.5px;
+    text-align: center;
+  }
+
+  .time-panel {
+    width: 1112px;
+    height: 1040px;
+    background-image: url(../assets/imgs/panel.png);
+    background-repeat: no-repeat;
+    background-color:  #0d233d;
+    background-position: center;
+    background-origin: border-box;
+    background-size: contain;
+    border-radius: 90px;
+    padding: 190px 0 60px 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: 7px solid white;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+  }
+
+  .timer {
+    display: block;
+    width: 100%;
+    height: 187px;
+    line-height: 1;
+    font-size: 236px;
+    margin-bottom: 215px;
+  }
+  .score-txt {
+    display: block;
+    width: 100%;
+    height: 62px;
+    line-height: 1;
+    font-size: 78.5px;
+  }
+  .score {
+    display: block;
+    width: 100%;
+    height: 114px;
+    line-height: 1;
+    font-size: 139px;
+  }
+  .bonus-panel {
+      width: 100%;
+  }
+  .bonus-txt {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 84.5px;
+  }
+  .bonus-wrp {
+    display: flex;
+    justify-content: space-between;
+    width: 1150px;
+  }
+  .bonus-bnt {
+    width: 341px;
+    height: 355px;
+    border-radius: 60px;
+    box-shadow: 0px 13px 49.5px 1.5px rgba(21, 46, 79, 0.51), inset 0px 23px 24px 0 rgba(246, 255, 236, 0.73);
+    border-style: solid;
+    border-width: 8px;
+    border-image-source: linear-gradient(to bottom, #c842e6, #ec81fa);
+    border-image-slice: 1;
+    background-image: linear-gradient(to bottom, #dc57f8, #9310b5, #580673, #7517f4), linear-gradient(to bottom, #c842e6, #ec81fa);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .bonus-cost {
+      display: block;
+    width: 294px;
+    height: 102px;
+    font-size: 84.5px;
+    text-align: center;
+    line-height: 1;
+    border-radius: 50px;
+    background-image: linear-gradient(to top, #30004e, #4d055d);
+    margin-bottom: 20px;
+  }
+  .money-btn-wrp {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+  }
+ 
