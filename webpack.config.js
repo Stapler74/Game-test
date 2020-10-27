@@ -1,3 +1,4 @@
+const webpack = require("webpack");
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
@@ -11,6 +12,7 @@ module.exports = {
         path: path.resolve(__dirname, 'build'),
         filename: 'js/[name].js',
     },
+    devtool: 'eval-source-map',
     module: {
         rules: [
             {
@@ -72,6 +74,10 @@ module.exports = {
             filename: 'css/[name].css',
             chunkFilename: '[id].css'
         }),
+        new webpack.DefinePlugin({
+            CANVAS_RENDERER: JSON.stringify(true),
+            WEBGL_RENDERER: JSON.stringify(true)
+          }),
         new CopyWebpackPlugin({
             patterns: [
                 { from: 'src/assets/imgs', to: 'img'}
