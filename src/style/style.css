@@ -19,6 +19,7 @@ body {
     width: 3508px;
     height: 2480px;
     background-color: #a1a1a1;
+    position: relative;
 }
 .font {
     font-family: 'marvin';
@@ -343,4 +344,45 @@ progress {
       display: flex;
       justify-content: space-between;
   }
- 
+ .you-win {
+     width: 1000px;
+     height: 1000px;
+     background-image: url(../assets/imgs/win.jpg);
+     background-repeat: no-repeat;
+     background-size: contain;
+     position: absolute;
+     top: 500px;
+     left: 1300px;
+     z-index: 3;
+ }
+ .you-win span{
+    position: absolute;
+    right: -122px;
+    top: -33px;
+    z-index: 4;
+    width: 132px;
+    height: 132px;
+    opacity: 0.7;
+    }
+    .you-win span:hover {
+    opacity: 1;
+    }
+    .you-win span:before,
+    .you-win span:after {
+    position: absolute;
+    left: 15px;
+    content: ' ';
+    height: 66px;
+    width: 4px;
+    background-color: #333;
+    }
+    .you-win span:before {
+    transform: rotate(45deg);
+    }
+    .you-win span:after {
+    transform: rotate(-45deg);
+    }
+
+    .hide {
+        display: none;
+    }

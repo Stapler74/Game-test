@@ -1,5 +1,6 @@
 import 'phaser';
 import './style/style.css';
+import './style/magic.css';
 import config from './config';
 import {playGame} from './components/playGame';
 import { Preloader } from './components/preloader';

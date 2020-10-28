@@ -1,12 +1,13 @@
 export default {
     gameOptions : {
-        tileSize: 171,
+        tileSize: 170.4,
         boardOffset: {
             x: 50,
             y: 50
         },
         destroySpeed: 200,
-        fallSpeed: 100
+        fallSpeed: 100,
+        scoreToWin: 1000,
     },
     gameConfig : {
         type: Phaser.AUTO,
@@ -14,6 +15,5 @@ export default {
         width: 1633,
         height: 1819,
         backgroundColor: 0xa1a1a6,
-        //scene: "Game",
     }
 };
