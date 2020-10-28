@@ -145,6 +145,7 @@ export class playGame extends Phaser.Scene{
             this.score += 15 * cube;
         }
         this.scoreText.textContent = this.score;
+        document.querySelector(".progress").value = this.score /(this.scoreToWin/100); 
     }
     isWin() {
         if(this.score >= this.scoreToWin){

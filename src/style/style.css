@@ -80,19 +80,22 @@ progress {
     border-radius: 48.5px;
     box-shadow: 0px 5px 1px 0px rgba(49, 134, 249, 0.35);
     background-image: linear-gradient(to top, #000f24, #032655); 
+    
 }
   progress::-webkit-progress-bar {
-    /* стилевые правила */border-radius: 48px;
+    border-radius: 48px;
     box-shadow: 0px 5px 1px 0px rgba(49, 134, 249, 0.35);
     background-image: linear-gradient(to top, #000f24, #032655); 
   }
   progress::-webkit-progress-value {
     border-radius: 43px;
     background-image: linear-gradient(to top, #ecffcc, #a2ff00, #1d9b00, #60ff00);
+    transition: width 1s ease;
     }
   progress::-moz-progress-bar {
     border-radius: 43px;
     background-image: linear-gradient(to top, #ecffcc, #a2ff00, #1d9b00, #60ff00);
+    transition: width 1s ease;
   }
   .bonus-money2 {
     width: 494px;
