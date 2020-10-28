@@ -217,9 +217,9 @@ progress {
   .game-field {
     width: 1633px;
     height: 1819px;
-    background-image: url(../assets/imgs/gameField-background.png);
+    /*background-image: url(../assets/imgs/gameField-background.png);*/
     background-repeat: no-repeat;
-    background-color:  #0d233d;
+    /*background-color:  #0d233d;*/
     background-position: center;
     background-origin: border-box;
     background-size: contain;

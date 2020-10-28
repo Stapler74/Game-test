@@ -35,8 +35,8 @@ module.exports = {
             {
                 test: /\.(png|jpe?g|svg|gif)$/i,
                 use: {loader: 'file-loader', options: {
-                    outputPath: 'img',
-                    publicPath: '../img/'
+                    outputPath: 'assets/imgs',
+                    publicPath: '../assets/imgs/'
                 }}
             },
             {
@@ -80,7 +80,7 @@ module.exports = {
           }),
         new CopyWebpackPlugin({
             patterns: [
-                { from: 'src/assets/imgs', to: 'img'}
+                { from: 'src/assets/imgs', to: 'assets/imgs'}
             ]
         }),
     ]
