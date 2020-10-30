@@ -2,16 +2,14 @@ import 'phaser';
 import './style/style.css';
 import './style/magic.css';
 import config from './config';
-import {playGame} from './components/playGame';
+import { playGame } from './components/playGame';
 import { Preloader } from './components/preloader';
 
-
-document.querySelector(".play-pause").addEventListener("click", function() {
-    this.classList.toggle("paused");
-  });
-  let { gameConfig } = config;
- console.log(gameConfig);
-
+document.querySelector('.play-pause').addEventListener('click', function () {
+  this.classList.toggle('paused');
+});
+let { gameConfig } = config;
+console.log(gameConfig);
 
 // let game;
 //  window.onload = function() {
@@ -26,21 +24,21 @@ document.querySelector(".play-pause").addEventListener("click", function() {
 //     // window.addEventListener("resize", resize);
 // };
 class Game extends Phaser.Game {
-    constructor() {
-        super(gameConfig);
-        this.scene.add("Preloader", Preloader);
-        this.scene.add("Game", playGame);
-        this.scene.start("Preloader");
-    }
+  constructor() {
+    super(gameConfig);
+    this.scene.add('Preloader', Preloader);
+    this.scene.add('Game', playGame);
+    this.scene.start('Preloader');
+  }
 }
 
-window.onload = function() {
-    window.game = new Game();
-    window.focus();
-    console.log(game);
-   
+window.onload = function () {
+  window.game = new Game();
+  window.focus();
+  console.log(game);
 };
 
+//Если успею переделать игровое поле на всю страницу
 // function resize() {
 //     let canvas = document.querySelector("canvas");
 //     let windowWidth = window.innerWidth;
